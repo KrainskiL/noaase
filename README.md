@@ -1,4 +1,6 @@
-# noaase R package
+**Travis Build Status**
+
+[![Travis-CI Build Status](https://travis-ci.org/KrainskiL/noaase.svg?branch=master)](https://travis-ci.org/KrainskiL/noaase)
 
 `noaase` is the R package developed as a capstone project in
 ["Mastering Software Development in R Specialization"](https://www.coursera.org/specializations/r).
