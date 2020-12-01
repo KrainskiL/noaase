@@ -1,0 +1,22 @@
+Package: noaase
+Type: Package
+Title: NOAA Significant Earthquakes toolkit
+Version: 1.0.0
+Author: Lukasz Krainski
+Maintainer: Lukasz Krainski <lukasz.krainski123@gmail.com>
+Description: A package that can be used to clean and visualize data from NOAA Significant Earthquakes dataset.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports: dplyr,
+    grid,
+    ggplot2,
+    leaflet,
+    lubridate,
+    tidyr
+LazyData: true
+RoxygenNote: 7.1.1
+Suggests: knitr,
+    rmarkdown,
+    testthat,
+    readr
+VignetteBuilder: knitr
