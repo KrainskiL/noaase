@@ -7,12 +7,14 @@ Maintainer: Lukasz Krainski <lukasz.krainski123@gmail.com>
 Description: A package that can be used to clean and visualize data from NOAA Significant Earthquakes dataset.
 License: MIT + file LICENSE
 Encoding: UTF-8
-Imports: dplyr,
+Imports: 
+    dplyr,
     grid,
     ggplot2,
     leaflet,
     lubridate,
-    tidyr
+    tidyr,
+    stringr
 LazyData: true
 RoxygenNote: 7.1.1
 Suggests: knitr,

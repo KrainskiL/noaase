@@ -36,19 +36,19 @@ geom_timeline(
 Timeline for earthquakes
 }
 \details{
-A timeline is a visualization of earthquakes ordered by date of occurrence; point's color corresponds to the number of deaths
+A timeline is a visualization of earthquakes ordered by date of occurrence, point's color corresponds to the number of deaths
 and the size represents the magnitude of earthquake.
 }
 \examples{
 \dontrun{
 clean_df \%>\%
-dplyr::filter(COUNTRY == c("MEXICO","USA") & lubridate::year(DATE) >= 2000) \%>\%
+dplyr::filter(COUNTRY == c("MEXICO","USA") & lubridate::year(DATE) >= 2010) \%>\%
 ggplot(aes(x = DATE,
            y = COUNTRY,
            color = TOTAL_DEATHS,
            size = EQ_PRIMARY)) +
-geom_timeline(alpha=.5) +
-theme(legend.position="bottom", legend.box="horizontal", plot.title=element_text(hjust=0.5)) +
+geom_timeline(alpha=.7) +
+theme(legend.position = "bottom", legend.box = "horizontal", plot.title = element_text(hjust=0.5)) +
 ggtitle("Earthquakes timeline") +
 labs(size = "Richter scale value", color = "# deaths")
 }

@@ -19,7 +19,6 @@ More interesting pop-ups for the interactive map used with the eq_map() function
 \dontrun{
 readr::read_delim("eq.txt", delim = "\t") \%>\%
   eq_clean_data() \%>\%
-  eq_location_clean() \%>\%
   dplyr::filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000) \%>\%
   dplyr::mutate(popup_text = eq_create_label(.)) \%>\%
   eq_map(annot_col = "popup_text")

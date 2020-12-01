@@ -36,19 +36,19 @@ geom_timeline_label(
 Timeline label
 }
 \details{
-Adds labels for the locations of individual earthquaks. Used with geom_timeline.
+Adds annotations to the `n_max` largest earthquakes (used with geom_timeline).
 }
 \examples{
 \dontrun{
 clean_df \%>\%
-dplyr::filter(COUNTRY == c("MEXICO","USA") & lubridate::year(DATE) >= 2000) \%>\%
+dplyr::filter(COUNTRY == c("MEXICO","USA") & lubridate::year(DATE) >= 2010) \%>\%
 ggplot(aes(x = DATE,
            y = COUNTRY,
            color = TOTAL_DEATHS,
            size = EQ_PRIMARY)) +
-geom_timeline(alpha=.7) +
-geom_timeline_label(aes(label = LOCATION_NAME), n_max=4) +
-theme(legend.position="bottom", legend.box="horizontal", plot.title=element_text(hjust=0.5)) +
+geom_timeline(alpha = .7) +
+geom_timeline_label(aes(label = LOCATION_NAME), n_max = 4) +
+theme(legend.position = "bottom", legend.box = "horizontal", plot.title = element_text(hjust=0.5)) +
 ggtitle("Earthquakes timeline") +
 labs(size = "Richter scale value", color = "# deaths")
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/clean_data.R
 \name{eq_clean_data}
 \alias{eq_clean_data}
-\title{Cleaning NOAA dates and geographic coordinates}
+\title{Cleaning NOAA dates, geographic coordinates and location name}
 \usage{
 eq_clean_data(df)
 }
@@ -13,7 +13,7 @@ eq_clean_data(df)
 Cleaned data.frame with formatted date, longitude/latitude columns and location name.
 }
 \description{
-Cleaning NOAA dates and geographic coordinates
+Cleaning NOAA dates, geographic coordinates and location name
 }
 \examples{
 \dontrun{
